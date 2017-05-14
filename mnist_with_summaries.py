@@ -17,11 +17,10 @@
  This is an unimpressive MNIST model, but it is a good example of using
 tf.name_scope to make a graph legible in the TensorBoard graph explorer, and of
 naming summary tags so that they are grouped meaningfully in TensorBoard.
-
 It demonstrates the functionality of every TensorBoard dashboard.
 """
 from __future__ import absolute_import
-from __future__ import division
+  from __future__ import division
 from __future__ import print_function
 
 import argparse
@@ -37,8 +36,8 @@ FLAGS = None
 def train():
   # Import data
   mnist = input_data.read_data_sets(FLAGS.data_dir,
-                                    one_hot=True,
-                                    fake_data=FLAGS.fake_data)
+    one_hot=True,
+    fake_data=FLAGS.fake_data)
 
   sess = tf.InteractiveSession()
   # Create a multilayer model.
@@ -196,9 +195,9 @@ if __name__ == '__main__':
                       help='Initial learning rate')
   parser.add_argument('--dropout', type=float, default=0.9,
                       help='Keep probability for training dropout.')
-  parser.add_argument('--data_dir', type=str, default='/tmp/tensorflow/mnist/input_data',
+  parser.add_argument('--data_dir', type=str, default='/home/hadoop/workspace/tf_zero2one/data/mnist/',
                       help='Directory for storing input data')
-  parser.add_argument('--log_dir', type=str, default='/tmp/tensorflow/mnist/logs/mnist_with_summaries',
+  parser.add_argument('--log_dir', type=str, default='/home/hadoop/workspace/tf_zero2one/logs/mnist_with_summaries',
                       help='Summaries log directory')
   FLAGS, unparsed = parser.parse_known_args()
   tf.app.run(main=main, argv=[sys.argv[0]] + unparsed)

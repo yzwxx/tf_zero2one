@@ -127,9 +127,12 @@ def main(_):
   # Build the graph for the deep net
   y_conv, keep_prob = deepnn(x)
 
+  # loss for training
   cross_entropy = tf.reduce_mean(
       tf.nn.softmax_cross_entropy_with_logits(labels=y_, logits=y_conv))
   train_step = tf.train.AdamOptimizer(1e-4).minimize(cross_entropy)
+
+  # accuracy for testing
   correct_prediction = tf.equal(tf.argmax(y_conv, 1), tf.argmax(y_, 1))
   accuracy = tf.reduce_mean(tf.cast(correct_prediction, tf.float32))
 

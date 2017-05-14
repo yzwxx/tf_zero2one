@@ -1,0 +1,671 @@
+I tensorflow/stream_executor/dso_loader.cc:135] successfully opened CUDA library libcublas.so.8.0 locally
+I tensorflow/stream_executor/dso_loader.cc:135] successfully opened CUDA library libcudnn.so.5 locally
+I tensorflow/stream_executor/dso_loader.cc:135] successfully opened CUDA library libcufft.so.8.0 locally
+I tensorflow/stream_executor/dso_loader.cc:135] successfully opened CUDA library libcuda.so.1 locally
+I tensorflow/stream_executor/dso_loader.cc:135] successfully opened CUDA library libcurand.so.8.0 locally
+W tensorflow/core/platform/cpu_feature_guard.cc:45] The TensorFlow library wasn't compiled to use SSE3 instructions, but these are available on your machine and could speed up CPU computations.
+W tensorflow/core/platform/cpu_feature_guard.cc:45] The TensorFlow library wasn't compiled to use SSE4.1 instructions, but these are available on your machine and could speed up CPU computations.
+W tensorflow/core/platform/cpu_feature_guard.cc:45] The TensorFlow library wasn't compiled to use SSE4.2 instructions, but these are available on your machine and could speed up CPU computations.
+W tensorflow/core/platform/cpu_feature_guard.cc:45] The TensorFlow library wasn't compiled to use AVX instructions, but these are available on your machine and could speed up CPU computations.
+W tensorflow/core/platform/cpu_feature_guard.cc:45] The TensorFlow library wasn't compiled to use AVX2 instructions, but these are available on your machine and could speed up CPU computations.
+W tensorflow/core/platform/cpu_feature_guard.cc:45] The TensorFlow library wasn't compiled to use FMA instructions, but these are available on your machine and could speed up CPU computations.
+I tensorflow/core/common_runtime/gpu/gpu_device.cc:885] Found device 0 with properties: 
+name: Tesla K80
+major: 3 minor: 7 memoryClockRate (GHz) 0.8235
+pciBusID 0000:06:00.0
+Total memory: 11.17GiB
+Free memory: 11.11GiB
+W tensorflow/stream_executor/cuda/cuda_driver.cc:590] creating context when one is currently active; existing: 0x3e525c0
+I tensorflow/core/common_runtime/gpu/gpu_device.cc:885] Found device 1 with properties: 
+name: Tesla K80
+major: 3 minor: 7 memoryClockRate (GHz) 0.8235
+pciBusID 0000:07:00.0
+Total memory: 11.17GiB
+Free memory: 11.11GiB
+W tensorflow/stream_executor/cuda/cuda_driver.cc:590] creating context when one is currently active; existing: 0x3e56410
+I tensorflow/core/common_runtime/gpu/gpu_device.cc:885] Found device 2 with properties: 
+name: Tesla K80
+major: 3 minor: 7 memoryClockRate (GHz) 0.8235
+pciBusID 0000:84:00.0
+Total memory: 11.17GiB
+Free memory: 11.11GiB
+W tensorflow/stream_executor/cuda/cuda_driver.cc:590] creating context when one is currently active; existing: 0x3e5a290
+I tensorflow/core/common_runtime/gpu/gpu_device.cc:885] Found device 3 with properties: 
+name: Tesla K80
+major: 3 minor: 7 memoryClockRate (GHz) 0.8235
+pciBusID 0000:85:00.0
+Total memory: 11.17GiB
+Free memory: 11.11GiB
+I tensorflow/core/common_runtime/gpu/gpu_device.cc:777] Peer access not supported between device ordinals 0 and 2
+I tensorflow/core/common_runtime/gpu/gpu_device.cc:777] Peer access not supported between device ordinals 0 and 3
+I tensorflow/core/common_runtime/gpu/gpu_device.cc:777] Peer access not supported between device ordinals 1 and 2
+I tensorflow/core/common_runtime/gpu/gpu_device.cc:777] Peer access not supported between device ordinals 1 and 3
+I tensorflow/core/common_runtime/gpu/gpu_device.cc:777] Peer access not supported between device ordinals 2 and 0
+I tensorflow/core/common_runtime/gpu/gpu_device.cc:777] Peer access not supported between device ordinals 2 and 1
+I tensorflow/core/common_runtime/gpu/gpu_device.cc:777] Peer access not supported between device ordinals 3 and 0
+I tensorflow/core/common_runtime/gpu/gpu_device.cc:777] Peer access not supported between device ordinals 3 and 1
+I tensorflow/core/common_runtime/gpu/gpu_device.cc:906] DMA: 0 1 2 3 
+I tensorflow/core/common_runtime/gpu/gpu_device.cc:916] 0:   Y Y N N 
+I tensorflow/core/common_runtime/gpu/gpu_device.cc:916] 1:   Y Y N N 
+I tensorflow/core/common_runtime/gpu/gpu_device.cc:916] 2:   N N Y Y 
+I tensorflow/core/common_runtime/gpu/gpu_device.cc:916] 3:   N N Y Y 
+I tensorflow/core/common_runtime/gpu/gpu_device.cc:975] Creating TensorFlow device (/gpu:0) -> (device: 0, name: Tesla K80, pci bus id: 0000:06:00.0)
+I tensorflow/core/common_runtime/gpu/gpu_device.cc:975] Creating TensorFlow device (/gpu:1) -> (device: 1, name: Tesla K80, pci bus id: 0000:07:00.0)
+I tensorflow/core/common_runtime/gpu/gpu_device.cc:975] Creating TensorFlow device (/gpu:2) -> (device: 2, name: Tesla K80, pci bus id: 0000:84:00.0)
+I tensorflow/core/common_runtime/gpu/gpu_device.cc:975] Creating TensorFlow device (/gpu:3) -> (device: 3, name: Tesla K80, pci bus id: 0000:85:00.0)
+Successfully downloaded train-images-idx3-ubyte.gz 9912422 bytes.
+Extracting /home/guest/workspace/tf_zero2one/train-images-idx3-ubyte.gz
+Successfully downloaded train-labels-idx1-ubyte.gz 28881 bytes.
+Extracting /home/guest/workspace/tf_zero2one/train-labels-idx1-ubyte.gz
+Successfully downloaded t10k-images-idx3-ubyte.gz 1648877 bytes.
+Extracting /home/guest/workspace/tf_zero2one/t10k-images-idx3-ubyte.gz
+Successfully downloaded t10k-labels-idx1-ubyte.gz 4542 bytes.
+Extracting /home/guest/workspace/tf_zero2one/t10k-labels-idx1-ubyte.gz
+step 0, training accuracy 0.04
+step 100, training accuracy 0.8
+step 200, training accuracy 0.88
+step 300, training accuracy 0.88
+step 400, training accuracy 1
+step 500, training accuracy 0.94
+step 600, training accuracy 0.98
+step 700, training accuracy 0.96
+step 800, training accuracy 0.86
+step 900, training accuracy 1
+step 1000, training accuracy 0.96
+step 1100, training accuracy 0.92
+step 1200, training accuracy 0.98
+step 1300, training accuracy 0.98
+step 1400, training accuracy 0.96
+step 1500, training accuracy 0.96
+step 1600, training accuracy 0.98
+step 1700, training accuracy 1
+step 1800, training accuracy 1
+step 1900, training accuracy 0.98
+step 2000, training accuracy 0.98
+step 2100, training accuracy 0.98
+step 2200, training accuracy 1
+step 2300, training accuracy 1
+step 2400, training accuracy 1
+step 2500, training accuracy 1
+step 2600, training accuracy 0.96
+step 2700, training accuracy 0.94
+step 2800, training accuracy 0.96
+step 2900, training accuracy 0.98
+step 3000, training accuracy 0.98
+step 3100, training accuracy 0.98
+step 3200, training accuracy 1
+step 3300, training accuracy 1
+step 3400, training accuracy 1
+step 3500, training accuracy 1
+step 3600, training accuracy 1
+step 3700, training accuracy 0.94
+step 3800, training accuracy 1
+step 3900, training accuracy 0.98
+step 4000, training accuracy 0.98
+step 4100, training accuracy 0.96
+step 4200, training accuracy 0.98
+step 4300, training accuracy 1
+step 4400, training accuracy 0.98
+step 4500, training accuracy 0.98
+step 4600, training accuracy 1
+step 4700, training accuracy 1
+step 4800, training accuracy 0.98
+step 4900, training accuracy 1
+step 5000, training accuracy 1
+step 5100, training accuracy 0.98
+step 5200, training accuracy 1
+step 5300, training accuracy 1
+step 5400, training accuracy 1
+step 5500, training accuracy 1
+step 5600, training accuracy 0.98
+step 5700, training accuracy 0.98
+step 5800, training accuracy 1
+step 5900, training accuracy 1
+step 6000, training accuracy 1
+step 6100, training accuracy 0.98
+step 6200, training accuracy 0.96
+step 6300, training accuracy 1
+step 6400, training accuracy 0.96
+step 6500, training accuracy 0.96
+step 6600, training accuracy 0.96
+step 6700, training accuracy 1
+step 6800, training accuracy 1
+step 6900, training accuracy 1
+step 7000, training accuracy 1
+step 7100, training accuracy 0.96
+step 7200, training accuracy 1
+step 7300, training accuracy 0.98
+step 7400, training accuracy 1
+step 7500, training accuracy 1
+step 7600, training accuracy 1
+step 7700, training accuracy 1
+step 7800, training accuracy 1
+step 7900, training accuracy 1
+step 8000, training accuracy 1
+step 8100, training accuracy 0.98
+step 8200, training accuracy 1
+step 8300, training accuracy 1
+step 8400, training accuracy 1
+step 8500, training accuracy 0.98
+step 8600, training accuracy 0.98
+step 8700, training accuracy 1
+step 8800, training accuracy 1
+step 8900, training accuracy 1
+step 9000, training accuracy 0.98
+step 9100, training accuracy 1
+step 9200, training accuracy 1
+step 9300, training accuracy 1
+step 9400, training accuracy 1
+step 9500, training accuracy 0.94
+step 9600, training accuracy 1
+step 9700, training accuracy 0.98
+step 9800, training accuracy 1
+step 9900, training accuracy 0.98
+step 10000, training accuracy 1
+step 10100, training accuracy 1
+step 10200, training accuracy 1
+step 10300, training accuracy 1
+step 10400, training accuracy 1
+step 10500, training accuracy 1
+step 10600, training accuracy 1
+step 10700, training accuracy 1
+step 10800, training accuracy 1
+step 10900, training accuracy 1
+step 11000, training accuracy 1
+step 11100, training accuracy 1
+step 11200, training accuracy 1
+step 11300, training accuracy 1
+step 11400, training accuracy 1
+step 11500, training accuracy 1
+step 11600, training accuracy 1
+step 11700, training accuracy 1
+step 11800, training accuracy 0.98
+step 11900, training accuracy 1
+step 12000, training accuracy 1
+step 12100, training accuracy 1
+step 12200, training accuracy 1
+step 12300, training accuracy 1
+step 12400, training accuracy 1
+step 12500, training accuracy 1
+step 12600, training accuracy 1
+step 12700, training accuracy 1
+step 12800, training accuracy 1
+step 12900, training accuracy 1
+step 13000, training accuracy 1
+step 13100, training accuracy 1
+step 13200, training accuracy 1
+step 13300, training accuracy 1
+step 13400, training accuracy 1
+step 13500, training accuracy 0.98
+step 13600, training accuracy 0.98
+step 13700, training accuracy 0.98
+step 13800, training accuracy 1
+step 13900, training accuracy 1
+step 14000, training accuracy 0.98
+step 14100, training accuracy 1
+step 14200, training accuracy 1
+step 14300, training accuracy 1
+step 14400, training accuracy 1
+step 14500, training accuracy 1
+step 14600, training accuracy 1
+step 14700, training accuracy 1
+step 14800, training accuracy 0.98
+step 14900, training accuracy 1
+step 15000, training accuracy 0.98
+step 15100, training accuracy 1
+step 15200, training accuracy 1
+step 15300, training accuracy 1
+step 15400, training accuracy 1
+step 15500, training accuracy 0.98
+step 15600, training accuracy 1
+step 15700, training accuracy 1
+step 15800, training accuracy 1
+step 15900, training accuracy 0.98
+step 16000, training accuracy 1
+step 16100, training accuracy 1
+step 16200, training accuracy 1
+step 16300, training accuracy 1
+step 16400, training accuracy 1
+step 16500, training accuracy 1
+step 16600, training accuracy 1
+step 16700, training accuracy 1
+step 16800, training accuracy 1
+step 16900, training accuracy 1
+step 17000, training accuracy 1
+step 17100, training accuracy 1
+step 17200, training accuracy 1
+step 17300, training accuracy 1
+step 17400, training accuracy 1
+step 17500, training accuracy 1
+step 17600, training accuracy 1
+step 17700, training accuracy 1
+step 17800, training accuracy 1
+step 17900, training accuracy 1
+step 18000, training accuracy 1
+step 18100, training accuracy 1
+step 18200, training accuracy 0.98
+step 18300, training accuracy 1
+step 18400, training accuracy 1
+step 18500, training accuracy 1
+step 18600, training accuracy 1
+step 18700, training accuracy 1
+step 18800, training accuracy 0.98
+step 18900, training accuracy 1
+step 19000, training accuracy 1
+step 19100, training accuracy 1
+step 19200, training accuracy 1
+step 19300, training accuracy 1
+step 19400, training accuracy 1
+step 19500, training accuracy 1
+step 19600, training accuracy 1
+step 19700, training accuracy 1
+step 19800, training accuracy 1
+step 19900, training accuracy 1
+test accuracy 0.9909
+I tensorflow/stream_executor/dso_loader.cc:135] successfully opened CUDA library libcublas.so.8.0 locally
+I tensorflow/stream_executor/dso_loader.cc:135] successfully opened CUDA library libcudnn.so.5 locally
+I tensorflow/stream_executor/dso_loader.cc:135] successfully opened CUDA library libcufft.so.8.0 locally
+I tensorflow/stream_executor/dso_loader.cc:135] successfully opened CUDA library libcuda.so.1 locally
+I tensorflow/stream_executor/dso_loader.cc:135] successfully opened CUDA library libcurand.so.8.0 locally
+W tensorflow/core/platform/cpu_feature_guard.cc:45] The TensorFlow library wasn't compiled to use SSE3 instructions, but these are available on your machine and could speed up CPU computations.
+W tensorflow/core/platform/cpu_feature_guard.cc:45] The TensorFlow library wasn't compiled to use SSE4.1 instructions, but these are available on your machine and could speed up CPU computations.
+W tensorflow/core/platform/cpu_feature_guard.cc:45] The TensorFlow library wasn't compiled to use SSE4.2 instructions, but these are available on your machine and could speed up CPU computations.
+W tensorflow/core/platform/cpu_feature_guard.cc:45] The TensorFlow library wasn't compiled to use AVX instructions, but these are available on your machine and could speed up CPU computations.
+W tensorflow/core/platform/cpu_feature_guard.cc:45] The TensorFlow library wasn't compiled to use AVX2 instructions, but these are available on your machine and could speed up CPU computations.
+W tensorflow/core/platform/cpu_feature_guard.cc:45] The TensorFlow library wasn't compiled to use FMA instructions, but these are available on your machine and could speed up CPU computations.
+I tensorflow/core/common_runtime/gpu/gpu_device.cc:885] Found device 0 with properties: 
+name: Tesla K80
+major: 3 minor: 7 memoryClockRate (GHz) 0.8235
+pciBusID 0000:06:00.0
+Total memory: 11.17GiB
+Free memory: 11.11GiB
+W tensorflow/stream_executor/cuda/cuda_driver.cc:590] creating context when one is currently active; existing: 0x3785680
+I tensorflow/core/common_runtime/gpu/gpu_device.cc:885] Found device 1 with properties: 
+name: Tesla K80
+major: 3 minor: 7 memoryClockRate (GHz) 0.8235
+pciBusID 0000:07:00.0
+Total memory: 11.17GiB
+Free memory: 11.11GiB
+W tensorflow/stream_executor/cuda/cuda_driver.cc:590] creating context when one is currently active; existing: 0x37894d0
+I tensorflow/core/common_runtime/gpu/gpu_device.cc:885] Found device 2 with properties: 
+name: Tesla K80
+major: 3 minor: 7 memoryClockRate (GHz) 0.8235
+pciBusID 0000:84:00.0
+Total memory: 11.17GiB
+Free memory: 11.11GiB
+W tensorflow/stream_executor/cuda/cuda_driver.cc:590] creating context when one is currently active; existing: 0x378d350
+I tensorflow/core/common_runtime/gpu/gpu_device.cc:885] Found device 3 with properties: 
+name: Tesla K80
+major: 3 minor: 7 memoryClockRate (GHz) 0.8235
+pciBusID 0000:85:00.0
+Total memory: 11.17GiB
+Free memory: 11.11GiB
+I tensorflow/core/common_runtime/gpu/gpu_device.cc:777] Peer access not supported between device ordinals 0 and 2
+I tensorflow/core/common_runtime/gpu/gpu_device.cc:777] Peer access not supported between device ordinals 0 and 3
+I tensorflow/core/common_runtime/gpu/gpu_device.cc:777] Peer access not supported between device ordinals 1 and 2
+I tensorflow/core/common_runtime/gpu/gpu_device.cc:777] Peer access not supported between device ordinals 1 and 3
+I tensorflow/core/common_runtime/gpu/gpu_device.cc:777] Peer access not supported between device ordinals 2 and 0
+I tensorflow/core/common_runtime/gpu/gpu_device.cc:777] Peer access not supported between device ordinals 2 and 1
+I tensorflow/core/common_runtime/gpu/gpu_device.cc:777] Peer access not supported between device ordinals 3 and 0
+I tensorflow/core/common_runtime/gpu/gpu_device.cc:777] Peer access not supported between device ordinals 3 and 1
+I tensorflow/core/common_runtime/gpu/gpu_device.cc:906] DMA: 0 1 2 3 
+I tensorflow/core/common_runtime/gpu/gpu_device.cc:916] 0:   Y Y N N 
+I tensorflow/core/common_runtime/gpu/gpu_device.cc:916] 1:   Y Y N N 
+I tensorflow/core/common_runtime/gpu/gpu_device.cc:916] 2:   N N Y Y 
+I tensorflow/core/common_runtime/gpu/gpu_device.cc:916] 3:   N N Y Y 
+I tensorflow/core/common_runtime/gpu/gpu_device.cc:975] Creating TensorFlow device (/gpu:0) -> (device: 0, name: Tesla K80, pci bus id: 0000:06:00.0)
+I tensorflow/core/common_runtime/gpu/gpu_device.cc:975] Creating TensorFlow device (/gpu:1) -> (device: 1, name: Tesla K80, pci bus id: 0000:07:00.0)
+I tensorflow/core/common_runtime/gpu/gpu_device.cc:975] Creating TensorFlow device (/gpu:2) -> (device: 2, name: Tesla K80, pci bus id: 0000:84:00.0)
+I tensorflow/core/common_runtime/gpu/gpu_device.cc:975] Creating TensorFlow device (/gpu:3) -> (device: 3, name: Tesla K80, pci bus id: 0000:85:00.0)
+Successfully downloaded train-images-idx3-ubyte.gz 9912422 bytes.
+Extracting /home/guest/workspace/tf_zero2one/data/mnist/train-images-idx3-ubyte.gz
+Successfully downloaded train-labels-idx1-ubyte.gz 28881 bytes.
+Extracting /home/guest/workspace/tf_zero2one/data/mnist/train-labels-idx1-ubyte.gz
+Successfully downloaded t10k-images-idx3-ubyte.gz 1648877 bytes.
+Extracting /home/guest/workspace/tf_zero2one/data/mnist/t10k-images-idx3-ubyte.gz
+Successfully downloaded t10k-labels-idx1-ubyte.gz 4542 bytes.
+Extracting /home/guest/workspace/tf_zero2one/data/mnist/t10k-labels-idx1-ubyte.gz
+step 0, training accuracy 0.04
+step 100, training accuracy 0.86
+step 200, training accuracy 0.92
+step 300, training accuracy 0.84
+step 400, training accuracy 0.98
+step 500, training accuracy 0.9
+step 600, training accuracy 1
+step 700, training accuracy 0.98
+step 800, training accuracy 0.96
+step 900, training accuracy 1
+step 1000, training accuracy 0.96
+step 1100, training accuracy 0.96
+step 1200, training accuracy 0.96
+step 1300, training accuracy 0.96
+step 1400, training accuracy 1
+step 1500, training accuracy 0.94
+step 1600, training accuracy 0.96
+step 1700, training accuracy 0.94
+step 1800, training accuracy 0.94
+step 1900, training accuracy 0.98
+step 2000, training accuracy 0.94
+step 2100, training accuracy 1
+step 2200, training accuracy 0.98
+step 2300, training accuracy 0.98
+step 2400, training accuracy 0.98
+step 2500, training accuracy 1
+step 2600, training accuracy 0.98
+step 2700, training accuracy 1
+step 2800, training accuracy 0.98
+step 2900, training accuracy 1
+step 3000, training accuracy 0.98
+step 3100, training accuracy 0.94
+step 3200, training accuracy 1
+step 3300, training accuracy 1
+step 3400, training accuracy 0.98
+step 3500, training accuracy 1
+step 3600, training accuracy 0.94
+step 3700, training accuracy 0.98
+step 3800, training accuracy 1
+step 3900, training accuracy 1
+step 4000, training accuracy 1
+step 4100, training accuracy 1
+step 4200, training accuracy 1
+step 4300, training accuracy 0.98
+step 4400, training accuracy 1
+step 4500, training accuracy 1
+step 4600, training accuracy 1
+step 4700, training accuracy 0.98
+step 4800, training accuracy 1
+step 4900, training accuracy 1
+step 5000, training accuracy 1
+step 5100, training accuracy 1
+step 5200, training accuracy 1
+step 5300, training accuracy 1
+step 5400, training accuracy 1
+step 5500, training accuracy 1
+step 5600, training accuracy 0.98
+step 5700, training accuracy 0.98
+step 5800, training accuracy 1
+step 5900, training accuracy 1
+step 6000, training accuracy 1
+step 6100, training accuracy 0.98
+step 6200, training accuracy 1
+step 6300, training accuracy 0.98
+step 6400, training accuracy 1
+step 6500, training accuracy 1
+step 6600, training accuracy 1
+step 6700, training accuracy 1
+step 6800, training accuracy 0.98
+step 6900, training accuracy 1
+step 7000, training accuracy 1
+step 7100, training accuracy 0.98
+step 7200, training accuracy 1
+step 7300, training accuracy 1
+step 7400, training accuracy 0.98
+step 7500, training accuracy 1
+step 7600, training accuracy 1
+step 7700, training accuracy 1
+step 7800, training accuracy 1
+step 7900, training accuracy 1
+step 8000, training accuracy 1
+step 8100, training accuracy 1
+step 8200, training accuracy 1
+step 8300, training accuracy 1
+step 8400, training accuracy 1
+step 8500, training accuracy 0.98
+step 8600, training accuracy 1
+step 8700, training accuracy 1
+step 8800, training accuracy 1
+step 8900, training accuracy 1
+step 9000, training accuracy 1
+step 9100, training accuracy 0.98
+step 9200, training accuracy 1
+step 9300, training accuracy 1
+step 9400, training accuracy 1
+step 9500, training accuracy 1
+step 9600, training accuracy 1
+step 9700, training accuracy 1
+step 9800, training accuracy 1
+step 9900, training accuracy 1
+step 10000, training accuracy 1
+step 10100, training accuracy 1
+step 10200, training accuracy 1
+step 10300, training accuracy 1
+step 10400, training accuracy 1
+step 10500, training accuracy 0.96
+step 10600, training accuracy 1
+step 10700, training accuracy 1
+step 10800, training accuracy 1
+step 10900, training accuracy 1
+step 11000, training accuracy 1
+step 11100, training accuracy 1
+step 11200, training accuracy 1
+step 11300, training accuracy 1
+step 11400, training accuracy 1
+step 11500, training accuracy 1
+step 11600, training accuracy 1
+step 11700, training accuracy 1
+step 11800, training accuracy 1
+step 11900, training accuracy 1
+step 12000, training accuracy 1
+step 12100, training accuracy 1
+step 12200, training accuracy 1
+step 12300, training accuracy 0.98
+step 12400, training accuracy 1
+step 12500, training accuracy 1
+step 12600, training accuracy 1
+step 12700, training accuracy 0.98
+step 12800, training accuracy 1
+step 12900, training accuracy 1
+step 13000, training accuracy 1
+step 13100, training accuracy 1
+step 13200, training accuracy 1
+step 13300, training accuracy 1
+step 13400, training accuracy 1
+step 13500, training accuracy 1
+step 13600, training accuracy 1
+step 13700, training accuracy 1
+step 13800, training accuracy 1
+step 13900, training accuracy 1
+step 14000, training accuracy 1
+step 14100, training accuracy 1
+step 14200, training accuracy 1
+step 14300, training accuracy 1
+step 14400, training accuracy 1
+step 14500, training accuracy 1
+step 14600, training accuracy 1
+step 14700, training accuracy 1
+step 14800, training accuracy 1
+step 14900, training accuracy 1
+step 15000, training accuracy 1
+step 15100, training accuracy 1
+step 15200, training accuracy 1
+step 15300, training accuracy 1
+step 15400, training accuracy 1
+step 15500, training accuracy 1
+step 15600, training accuracy 1
+step 15700, training accuracy 1
+step 15800, training accuracy 1
+step 15900, training accuracy 0.98
+step 16000, training accuracy 1
+step 16100, training accuracy 1
+step 16200, training accuracy 0.98
+step 16300, training accuracy 1
+step 16400, training accuracy 1
+step 16500, training accuracy 1
+step 16600, training accuracy 1
+step 16700, training accuracy 1
+step 16800, training accuracy 1
+step 16900, training accuracy 1
+step 17000, training accuracy 1
+step 17100, training accuracy 1
+step 17200, training accuracy 1
+step 17300, training accuracy 1
+step 17400, training accuracy 1
+step 17500, training accuracy 1
+step 17600, training accuracy 1
+step 17700, training accuracy 1
+step 17800, training accuracy 1
+step 17900, training accuracy 1
+step 18000, training accuracy 1
+step 18100, training accuracy 1
+step 18200, training accuracy 1
+step 18300, training accuracy 1
+step 18400, training accuracy 1
+step 18500, training accuracy 1
+step 18600, training accuracy 1
+step 18700, training accuracy 1
+step 18800, training accuracy 1
+step 18900, training accuracy 1
+step 19000, training accuracy 1
+step 19100, training accuracy 1
+step 19200, training accuracy 1
+step 19300, training accuracy 1
+step 19400, training accuracy 1
+step 19500, training accuracy 1
+step 19600, training accuracy 1
+step 19700, training accuracy 1
+step 19800, training accuracy 1
+step 19900, training accuracy 1
+test accuracy 0.9933
+Extracting /home/hadoop/workspace/tf_zero2one/data/mnist/train-images-idx3-ubyte.gz
+Extracting /home/hadoop/workspace/tf_zero2one/data/mnist/train-labels-idx1-ubyte.gz
+Extracting /home/hadoop/workspace/tf_zero2one/data/mnist/t10k-images-idx3-ubyte.gz
+Extracting /home/hadoop/workspace/tf_zero2one/data/mnist/t10k-labels-idx1-ubyte.gz
+Accuracy at step 0: 0.0864
+Accuracy at step 10: 0.6402
+Accuracy at step 20: 0.7855
+Accuracy at step 30: 0.8441
+Accuracy at step 40: 0.8671
+Traceback (most recent call last):
+  File "mnist_with_summaries.py", line 204, in <module>
+    tf.app.run(main=main, argv=[sys.argv[0]] + unparsed)
+  File "/usr/local/lib/python2.7/dist-packages/tensorflow/python/platform/app.py", line 43, in run
+    sys.exit(main(sys.argv[:1] + flags_passthrough))
+  File "mnist_with_summaries.py", line 185, in main
+    train()
+  File "mnist_with_summaries.py", line 160, in train
+    summary, acc = sess.run([merged, accuracy], feed_dict=feed_dict(False))
+  File "/usr/local/lib/python2.7/dist-packages/tensorflow/python/client/session.py", line 766, in run
+    run_metadata_ptr)
+  File "/usr/local/lib/python2.7/dist-packages/tensorflow/python/client/session.py", line 964, in _run
+    feed_dict_string, options, run_metadata)
+  File "/usr/local/lib/python2.7/dist-packages/tensorflow/python/client/session.py", line 1014, in _do_run
+    target_list, options, run_metadata)
+  File "/usr/local/lib/python2.7/dist-packages/tensorflow/python/client/session.py", line 1021, in _do_call
+    return fn(*args)
+  File "/usr/local/lib/python2.7/dist-packages/tensorflow/python/client/session.py", line 1003, in _run_fn
+    status, run_metadata)
+KeyboardInterrupt
+Extracting /home/hadoop/workspace/tf_zero2one/data/mnist/train-images-idx3-ubyte.gz
+Extracting /home/hadoop/workspace/tf_zero2one/data/mnist/train-labels-idx1-ubyte.gz
+Extracting /home/hadoop/workspace/tf_zero2one/data/mnist/t10k-images-idx3-ubyte.gz
+Extracting /home/hadoop/workspace/tf_zero2one/data/mnist/t10k-labels-idx1-ubyte.gz
+Accuracy at step 0: 0.0797
+Accuracy at step 10: 0.6931
+Accuracy at step 20: 0.8244
+Accuracy at step 30: 0.8609
+Accuracy at step 40: 0.8823
+Accuracy at step 50: 0.8863
+Accuracy at step 60: 0.8874
+Accuracy at step 70: 0.8872
+Accuracy at step 80: 0.8892
+Accuracy at step 90: 0.8931
+Adding run metadata for 99
+Accuracy at step 100: 0.9096
+Accuracy at step 110: 0.9222
+Accuracy at step 120: 0.9217
+Accuracy at step 130: 0.9243
+Accuracy at step 140: 0.9279
+Accuracy at step 150: 0.9233
+Accuracy at step 160: 0.9305
+Accuracy at step 170: 0.9299
+Accuracy at step 180: 0.9254
+Accuracy at step 190: 0.9256
+Adding run metadata for 199
+Accuracy at step 200: 0.9345
+Accuracy at step 210: 0.9367
+Accuracy at step 220: 0.9363
+Accuracy at step 230: 0.9359
+Accuracy at step 240: 0.9377
+Accuracy at step 250: 0.9309
+Accuracy at step 260: 0.9376
+Accuracy at step 270: 0.9403
+Accuracy at step 280: 0.9346
+Accuracy at step 290: 0.942
+Adding run metadata for 299
+Accuracy at step 300: 0.9435
+Accuracy at step 310: 0.9447
+Accuracy at step 320: 0.9445
+Accuracy at step 330: 0.9461
+Accuracy at step 340: 0.9481
+Accuracy at step 350: 0.9465
+Accuracy at step 360: 0.9434
+Accuracy at step 370: 0.9487
+Accuracy at step 380: 0.948
+Accuracy at step 390: 0.9465
+Adding run metadata for 399
+Accuracy at step 400: 0.9481
+Accuracy at step 410: 0.9467
+Accuracy at step 420: 0.9489
+Accuracy at step 430: 0.9474
+Accuracy at step 440: 0.9522
+Accuracy at step 450: 0.9516
+Accuracy at step 460: 0.9508
+Accuracy at step 470: 0.949
+Accuracy at step 480: 0.9498
+Accuracy at step 490: 0.9497
+Adding run metadata for 499
+Accuracy at step 500: 0.9531
+Accuracy at step 510: 0.9535
+Accuracy at step 520: 0.9499
+Accuracy at step 530: 0.9543
+Accuracy at step 540: 0.9545
+Accuracy at step 550: 0.9549
+Accuracy at step 560: 0.958
+Accuracy at step 570: 0.958
+Accuracy at step 580: 0.9569
+Accuracy at step 590: 0.9572
+Adding run metadata for 599
+Accuracy at step 600: 0.9582
+Accuracy at step 610: 0.9559
+Accuracy at step 620: 0.959
+Accuracy at step 630: 0.9585
+Accuracy at step 640: 0.961
+Accuracy at step 650: 0.9635
+Accuracy at step 660: 0.9607
+Accuracy at step 670: 0.9614
+Accuracy at step 680: 0.962
+Accuracy at step 690: 0.9615
+Adding run metadata for 699
+Accuracy at step 700: 0.9624
+Accuracy at step 710: 0.9634
+Accuracy at step 720: 0.9631
+Accuracy at step 730: 0.9622
+Accuracy at step 740: 0.9623
+Accuracy at step 750: 0.9642
+Accuracy at step 760: 0.9647
+Accuracy at step 770: 0.9637
+Accuracy at step 780: 0.964
+Accuracy at step 790: 0.9623
+Adding run metadata for 799
+Accuracy at step 800: 0.9614
+Accuracy at step 810: 0.9653
+Accuracy at step 820: 0.9639
+Accuracy at step 830: 0.9644
+Accuracy at step 840: 0.9626
+Accuracy at step 850: 0.9681
+Accuracy at step 860: 0.9658
+Accuracy at step 870: 0.9666
+Accuracy at step 880: 0.9677
+Accuracy at step 890: 0.9679
+Adding run metadata for 899
+Accuracy at step 900: 0.9677
+Accuracy at step 910: 0.9664
+Accuracy at step 920: 0.9655
+Accuracy at step 930: 0.9691
+Accuracy at step 940: 0.9679
+Accuracy at step 950: 0.9677
+Accuracy at step 960: 0.9659
+Accuracy at step 970: 0.9685
+Accuracy at step 980: 0.9657
+Accuracy at step 990: 0.9686
+Adding run metadata for 999
