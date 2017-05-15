@@ -67,9 +67,16 @@ group.add_argument("-q", "--quiet", action="store_true")
 
 check:https://docs.python.org/2/howto/argparse.html
 '''
+def print_info():
+	print(FLAGS.input_data_dir)
 
-args = parser.parse_args()
-print args
+if __name__ == '__main__':
+	args = parser.parse_args()
+	print args
 
-if args.log_dir:
-	print args.log_dir
+	FLAGS, unparsed = parser.parse_known_args()
+	print(FLAGS,unparsed)
+	print_info()
+
+	if args.log_dir:
+		print args.log_dir
