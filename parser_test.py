@@ -71,12 +71,7 @@ def print_info():
 	print(FLAGS.input_data_dir)
 
 if __name__ == '__main__':
-	args = parser.parse_args()
-	print args
 
 	FLAGS, unparsed = parser.parse_known_args()
-	print(FLAGS,unparsed)
+	print("known:{}  unkown:{}".format(FLAGS,unparsed))
 	print_info()
-
-	if args.log_dir:
-		print args.log_dir
