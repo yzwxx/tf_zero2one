@@ -17,7 +17,7 @@ blockquote:
 
 ~~strike through~~
 
-==highlight==
+
 horizon line:
 -------
 
@@ -61,13 +61,13 @@ First Header | Second Header
 Content from cell 1 | Content from cell 2
 Content in the first column | Content in the second column
 
-==math formula in markdown==
+math formula in markdown:
 
-\alpha
+$$\alpha$$
 
 $$ \sum_{\forall i}{x_i^{2}} $$
 
-\$\$ x^{2} + y^{2} = z^{2} \$\$
+$$ x^{2} + y^{2} = z^{2} $$
 
 ```tex
 $$ \sum_{\forall i}{x_i^{2}} $$
