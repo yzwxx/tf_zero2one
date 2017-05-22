@@ -1,10 +1,15 @@
 test for some font **some words** *italic*
+
 *You **can** combine them*
+
 hyperlink: [my github](https://github.com/yzwxx)
+
 inline code: 
 `def print_all(string):print string`
+
 image :
 ![cifar](https://github.com/zsdonghao/tl-book/blob/master/images/cifar-10.jpg?raw=true)
+
 list:
 - first
 - second
@@ -69,6 +74,4 @@ $$ \sum_{\forall i}{x_i^{2}} $$
 
 $$ x^{2} + y^{2} = z^{2} $$
 
-```tex
-$$ \sum_{\forall i}{x_i^{2}} $$
-```
+$$(W_0,H_0)$$
