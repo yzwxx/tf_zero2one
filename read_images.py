@@ -18,15 +18,16 @@ all_files = glob('./test_input/*.jpg')
 # shuffle(all_files)
 # print all_files
 
-with tf.Session() as sess:
-	# filename list to read from
-	filenames = all_files
-	# create a filename queue
-	filename_queue = tf.train.string_input_producer(filenames,shuffle = False, num_epochs = 3)
-	# create a reader
-	reader = tf.WholeFileReader()
-	key,value = reader.read(filename_queue)
 
+# filename list to read from
+filenames = all_files
+# create a filename queue
+filename_queue = tf.train.string_input_producer(filenames,shuffle = False, num_epochs = 3)
+# create a reader
+reader = tf.WholeFileReader()
+key,value = reader.read(filename_queue)
+
+with tf.Session() as sess:
 	# if missed then error will be raised(Attempting to use uninitialized value input_producer/limit_epochs/epochs)
 	tf.local_variables_initializer().run()
 	threads = tf.train.start_queue_runners(sess = sess)
